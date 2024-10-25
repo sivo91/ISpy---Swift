@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="center" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Ei-tH-oKW">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pexels-pixabay-531533" translatesAutoresizingMaskIntoConstraints="NO" id="x6f-ne-CTp">
+                                        <rect key="frame" x="-342" y="-33" width="1369" height="910"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="x6f-ne-CTp" firstAttribute="top" secondItem="rA5-yz-pxo" secondAttribute="top" id="EUQ-wK-pG0"/>
+                                    <constraint firstItem="x6f-ne-CTp" firstAttribute="leading" secondItem="rA5-yz-pxo" secondAttribute="leading" id="aRq-w8-N6q"/>
+                                    <constraint firstItem="x6f-ne-CTp" firstAttribute="trailing" secondItem="rA5-yz-pxo" secondAttribute="trailing" id="c6T-cG-9Ni"/>
+                                    <constraint firstItem="x6f-ne-CTp" firstAttribute="bottom" secondItem="rA5-yz-pxo" secondAttribute="bottom" id="dKG-Pn-ayz"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="j9c-Vy-2Ti"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="rA5-yz-pxo"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Ei-tH-oKW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1Ge-ZJ-jhe"/>
+                            <constraint firstItem="8Ei-tH-oKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BFF-SY-XND"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Ei-tH-oKW" secondAttribute="bottom" id="eaH-Rh-t4q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Ei-tH-oKW" secondAttribute="trailing" id="r6m-U0-abT"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="419" height="852"/>
+                    <connections>
+                        <outlet property="imageView" destination="x6f-ne-CTp" id="toh-dd-yaH"/>
+                        <outlet property="scrollView" destination="8Ei-tH-oKW" id="is9-SI-fB8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pexels-pixabay-531533" width="3156" height="1945"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
